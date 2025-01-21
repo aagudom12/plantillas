@@ -14,7 +14,7 @@ app.get('/saludo', function (req, res) {
 })
 
 app.get('/productos', function (req, res) {
-    const producto = {id: '1', nombre:'coche', colores:['rojo','negro']}
+    const producto = {id: '1', nombre:'coche', peso:'500',colores:['rojo','negro']}
     res.render('productos',{producto:producto});
 })
 

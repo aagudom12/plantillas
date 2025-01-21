@@ -14,6 +14,9 @@
         <label for="nombre">
             Nombre:<input type="text" id="nombre" value="<%= producto.nombre %>">
         </label><br>
+        <label for="peso">
+            Peso:<input type="number" id="peso" value="<%= producto.peso %>">
+        </label><br>
         <label for="colores">
             Colores:<select id="colores" name="colores">
                 <% producto.colores.forEach(color => { %>
