@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Detalles del producto</h1>
+    <form action="/productos">
+        <label for="id">
+            Id:<input type="text" id="id" value="<%= producto.id %>">
+        </label><br>
+        <label for="nombre">
+            Nombre:<input type="text" id="nombre" value="<%= producto.nombre %>">
+        </label><br>
+        <label for="colores">
+            Colores:<select id="colores" name="colores">
+                <% producto.colores.forEach(color => { %>
+                    <option value="<%= color %>"><%= color %></option>
+                <% }); %>
+            </select>
+        </label><br>
+    </form>
+</body>
+</html>
